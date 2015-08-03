@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/Alarm" version="1.0.0" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:app-control>
+        <tizen:src name="*"/>
+        <tizen:operation name="http://tizen.org/appcontrol/operation/view"/>
+        <tizen:mime name="text/html"/>
+    </tizen:app-control>
+    <tizen:application id="demoapp001.Alarm" package="demoapp001" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>Alarm</name>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/alarm"/>
+    <tizen:profile name="tv"/>
+    <tizen:setting screen-orientation="auto-rotation" background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>
