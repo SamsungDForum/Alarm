@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1920"/>
+    <title>Tizen Alarm API</title>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+<h1>Tizen Alarm API</h1>
+    <div class="left">
+        <h2>Available buttons/actions:</h2>
+
+        <div>
+            1 - Add an absolute alarm - delay 1 hour<br>
+            2 - Add a relative alarm - delay 1 hour<br>
+            3 - Add an absolute alarm - delay 1 minute<br>
+            4 - Add a relative alarm - delay 1 minute<br>
+            RED - Delete all alarms<br/>
+            0 - Clear logs
+        </div>
+
+        <div id="clock"></div>
+
+        <fieldset id="alarms">
+            <legend>Active alarms (press RED to remove all)</legend>
+            <div class="logs"></div>
+        </fieldset>
+        <fieldset>
+            <legend>Logs: </legend>
+            <div class="logs" id="logs"></div>
+        </fieldset>
+    </div>
+    <div class="right">
+        <h2>Info</h2>
+
+        <p>This application demonstrates the use of Tizen alarms. Alarms can be used to schedule launch of an application or a service</p>
+
+        <p>For the purpose of this demonstration the alarms set within application will simply start the application itself (effectively reloading it)</p>
+    </div>
+
+</body>
+</html>
