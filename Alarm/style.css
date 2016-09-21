@@ -19,7 +19,7 @@ body:after {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../img/lightblue_empty_grid.svg');
+    background-image: url('lightblue_empty_grid.svg');
     width: 100%;
     height: 100%;
     opacity: 0.05;
